@@ -1,0 +1,112 @@
+body {
+    background: rgb(94, 94, 210);
+    padding: 0;
+    margin: 0;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 10px 10px  0 0;
+}
+.snake {
+    border-radius: 20px;
+    background-color: green;
+}
+.bg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 1;
+}
+.pause {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: white;
+    font-size: 30px;   
+}
+.apple, .cherry, .pear{
+    background: url('./img/apple.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cherry {
+    background: url('./img/cherry.png');
+}
+.pear {
+    background: url('./img/pear.png');
+}
+.row {
+    display: flex;
+    margin-left: 10px;
+}
+.arrow {
+    position: absolute;
+    background: url('./img/arrow.png');
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 220px;
+    display: none;
+    top: 200px;
+    left: 40%;
+    z-index: 0;
+}
+.up {
+    transform: rotate(270deg);
+    top: 0px;
+}
+.down {
+    transform: rotate(90deg);
+}
+.right {
+    top: 100px;
+    left: 45%;
+}
+.left {
+    top: 100px;
+    transform: rotate(180deg);
+    left: 35%;
+}
+.active {
+    display: block;
+}
+.score {
+    margin: 10px 0 10px 40px;
+    font-size: 30px;
+    color: white;
+}
+.gameOverDiv {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+}
+.gameOverDiv div {
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.paBtn {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: rgba(78, 202, 24, 0.905);
+    font-size: 20px;
+}
+.paBtn:hover {
+    box-shadow: 1px 4px 4px 1px rgba(149, 149, 153, 0.5);
+    font-size: 25px;
+}
